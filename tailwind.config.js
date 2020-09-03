@@ -11,5 +11,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [require('./tailwind-plugin')],
+  plugins: [],
 }

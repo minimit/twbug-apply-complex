@@ -26,23 +26,23 @@
   }
 }
 
-.red-text {
+.test-blackred {
   color: black !important;
 }
 
-.red-text .red-text-inner {
+.test-blackred .test-blackred-inner {
   color: red !important;
 }
 
-.text-uppercase {
+.test-as-blackred {
   color: black;
 }
 
-.text-uppercase .red-text-inner {
+.test-as-blackred .test-blackred-inner {
   color: red !important;
 }
 
-.test {
+.final {
   color: black;
 }
 

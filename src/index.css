@@ -1,5 +1,14 @@
-@tailwind components;
+.test-blackred {
+  color: black !important;
+  .test-blackred-inner {
+    color: red !important;
+  }
+}
 
-.test {
-  @apply text-uppercase;
+.test-as-blackred {
+  @apply test-blackred;
+}
+
+.final {
+  @apply test-as-blackred;
 }
