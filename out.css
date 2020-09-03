@@ -26,12 +26,17 @@
   }
 }
 
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
 .red-text {
   color: red !important;
 }
 
 .test-0 {
-  color: red;
+  text-transform: uppercase;
+  color: red !important;
 }
 
 @media (min-width: 640px) {

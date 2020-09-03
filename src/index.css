@@ -1,5 +1,5 @@
 @tailwind components;
 
 .test-0 {
-  @apply red-text;
+  @apply red-text text-uppercase;
 }
