@@ -1,0 +1,7 @@
+.test-0 {
+  @apply red-text black-text;
+}
+
+.black-text {
+  color: black !important;
+}

@@ -1,0 +1,8 @@
+.test-0 {
+  color: red;
+  color: black !important;
+}
+
+.black-text {
+  color: black !important;
+}
