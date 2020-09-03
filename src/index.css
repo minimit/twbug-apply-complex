@@ -1,7 +1,5 @@
-.test-0 {
-  @apply red-text black-text;
-}
+@tailwind components;
 
-.black-text {
-  color: black !important;
+.test-0 {
+  @apply red-text;
 }
