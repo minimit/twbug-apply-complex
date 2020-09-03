@@ -4,11 +4,14 @@ module.exports = plugin.withOptions(() => {
   return function ({ addComponents }) {
 
     addComponents({
-      '.text-uppercase': {
-        textTransform: 'uppercase !important',
-      },
       '.red-text': {
-        color: 'red !important',
+        color: 'black !important',
+        '.red-text-inner': {
+          color: 'red !important',
+        },
+      },
+      '.text-uppercase': {
+        '@apply red-text': '',
       },
     })
 
