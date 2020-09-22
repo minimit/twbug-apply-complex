@@ -1,14 +1,17 @@
-.test-blackred {
-  color: black !important;
-  .test-blackred-inner {
-    color: red !important;
+.css {
+  position: initial;
+  > .css-inner {
+    display: inline-block;
+    @apply nested-apply !important;
   }
 }
 
-.test-as-blackred {
-  @apply test-blackred;
+.final-css {
+  @screen md {
+    @apply css !important;
+  }
 }
 
-.final {
-  @apply test-as-blackred;
+.final-plugin {
+  @apply md:plugin !important;
 }

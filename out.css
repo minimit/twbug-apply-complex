@@ -1,19 +1,24 @@
-.test-blackred {
-  color: black !important;
+.css {
+  position: initial;
 }
 
-.test-blackred .test-blackred-inner {
-  color: red !important;
+.css > .css-inner {
+  display: inline-block;
+  display: block !important;
 }
 
-.test-as-blackred {
-  color: black;
+.final-css {
+  @media (min-width: 768px) {
+    position: initial;
+
+    display: inline-block;
+
+    display: block !important;
+  }
 }
 
-.test-as-blackred .test-blackred-inner {
-  color: red !important;
-}
-
-.final {
-  color: black;
+@media (min-width: 768px) {
+  .final-plugin {
+    position: initial !important;
+  }
 }
