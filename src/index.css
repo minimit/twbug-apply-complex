@@ -6,12 +6,68 @@
   }
 }
 
+/* SHOULD BE
+.css {
+  position: initial;
+}
+
+.css > .css-inner {
+  display: inline-block;
+  display: block !important;
+}
+*/
+
 .final-css {
   @screen md {
     @apply css !important;
   }
 }
 
+/* SHOULD BE 
+@media (min-width: 768px) {
+  .final-css {
+    position: initial !important;
+  }
+
+  .final-css > .css-inner {
+    display: inline-block !important
+    display: block !important;
+  }
+}
+*/
+
 .final-plugin {
   @apply md:plugin !important;
 }
+
+/* SHOULD BE
+@media (min-width: 768px) {
+  .final-plugin {
+    position: initial !important;
+  }
+
+  .final-plugin > .plugin-inner {
+    display: inline-block !important
+    display: block !important;
+  }
+}
+*/
+
+.final-plugin-screen {
+  @screen md {
+    @apply plugin !important;
+  }
+}
+
+/* SHOULD BE
+@media (min-width: 768px) {
+  .final-plugin-screen {
+    position: initial !important;
+  }
+
+  .final-plugin-screen > .plugin-inner {
+    display: inline-block !important
+    display: block !important;
+  }
+}
+*/

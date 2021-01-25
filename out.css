@@ -1,24 +1,136 @@
 .css {
   position: initial;
 }
+  .css > .css-inner {
+    display: inline-block;
+    display: block !important;
+  }
+
+/* SHOULD BE
+.css {
+  position: initial;
+}
 
 .css > .css-inner {
   display: inline-block;
   display: block !important;
 }
+*/
+
+@media (min-width: 768px) {
 
 .final-css {
-  @media (min-width: 768px) {
-    position: initial;
+    position: initial
+}
 
-    display: inline-block;
+    .final-css > .css-inner {
+      display: inline-block;
+      display: block !important;
+    }
+  }
 
+/* SHOULD BE 
+@media (min-width: 768px) {
+  .final-css {
+    position: initial !important;
+  }
+
+  .final-css > .css-inner {
+    display: inline-block !important
     display: block !important;
   }
 }
+*/
 
 @media (min-width: 768px) {
   .final-plugin {
     position: initial !important;
   }
 }
+
+/* SHOULD BE
+@media (min-width: 768px) {
+  .final-plugin {
+    position: initial !important;
+  }
+
+  .final-plugin > .plugin-inner {
+    display: inline-block !important
+    display: block !important;
+  }
+}
+*/
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    position: initial;
+
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: inline-block
+}
+  }
+
+@media (min-width: 768px) {
+
+.final-plugin-screen {
+    display: block;
+
+    display: block;
+
+    display: block;
+
+    display: block;
+
+    display: block;
+
+    display: block
+}
+  }
+
+/* SHOULD BE
+@media (min-width: 768px) {
+  .final-plugin-screen {
+    position: initial !important;
+  }
+
+  .final-plugin-screen > .plugin-inner {
+    display: inline-block !important
+    display: block !important;
+  }
+}
+*/
