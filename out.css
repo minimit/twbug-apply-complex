@@ -20,13 +20,8 @@
 @media (min-width: 768px) {
 
 .final-css {
-    position: initial
-}
-
-    .final-css > .css-inner {
-      display: inline-block;
-      display: block !important;
-    }
+    display: block !important;
+  }
   }
 
 /* SHOULD BE 
@@ -46,6 +41,12 @@
   .final-plugin {
     position: initial !important;
   }
+  .plugin > .final-plugin-inner {
+    display: inline-block !important;
+  }
+  .plugin > .final-plugin-inner {
+    display: block !important;
+  }
 }
 
 /* SHOULD BE
@@ -64,62 +65,16 @@
 @media (min-width: 768px) {
 
 .final-plugin-screen {
-    position: initial;
-
-    display: inline-block
-}
+    position: initial !important;
   }
 
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: inline-block
-}
+.final-plugin-screen > .plugin-inner {
+    display: inline-block !important;
   }
 
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: inline-block
-}
+.final-plugin-screen > .plugin-inner {
+    display: block !important;
   }
-
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: inline-block
-}
-  }
-
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: inline-block
-}
-  }
-
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: inline-block
-}
-  }
-
-@media (min-width: 768px) {
-
-.final-plugin-screen {
-    display: block;
-
-    display: block;
-
-    display: block;
-
-    display: block;
-
-    display: block;
-
-    display: block
-}
   }
 
 /* SHOULD BE

@@ -19,18 +19,13 @@
 
 .final-css {
   @screen md {
-    @apply css !important;
+    @apply nested-apply !important;
   }
 }
 
 /* SHOULD BE 
 @media (min-width: 768px) {
   .final-css {
-    position: initial !important;
-  }
-
-  .final-css > .css-inner {
-    display: inline-block !important
     display: block !important;
   }
 }

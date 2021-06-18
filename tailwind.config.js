@@ -1,11 +1,6 @@
 module.exports = {
   purge: [],
-  future: {
-    removeDeprecatedGapUtilities: true,
-  },
-  experimental: {
-    applyComplexClasses: true,
-  },
+  mode: 'jit',
   theme: {
     extend: {
     },
